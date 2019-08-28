@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "styles3.css">
+</head>
+
+    <head>
+        <style>
+            table, th, td {
+            border: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>
+
+                <img src = "logo4.png" height = '250' width = '250'> 
+
+                <p style = "font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 30px;">
+                        List All Tasks
+            </p>
+                <a href="/">Home</a><br>
+                <a href="/newtask">Add New Task</a>
+                
+        </h1>
+        
+        <table style="width:60%">
+                <tr>
+                  <th>Name</th>
+                  <th>Due Date</th> 
+                  <th>Description</th>
+                </tr>
+
+
+                <% for (let i = 0; i<ar.length; i++){%>
+                <tr></tr>  
+                    
+                    <td>
+                        <%= ar[i].taskName %>  
+                    </td>
+                    <td>
+                        <%= ar[i].taskDue %>  
+                    </td>
+                    <td>
+                        <%= ar[i].taskDes %>  
+                    </td>
+                  
+                </tr>
+                <%} %>
+              </table>
+              
+
+    </body>
+
+
+</html>

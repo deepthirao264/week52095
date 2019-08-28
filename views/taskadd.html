@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "styles2.css">
+</head>
+
+
+<body>
+<img src = "logo3.png" height = '250' width = '250'> </br>
+
+<p style = "font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 40px;">
+        Add Tasks
+</p>
+            <a href="/">Home</a>
+            <a href="/listtasks">List Tasks</a>
+        
+        </h1>
+
+        <form action="/newtask" method="POST">
+            <label for="">Task Name</label>
+            <input type="text" name="taskName" /> </br>
+            Task Due:
+            <input type="date" name="taskDue" /> </br>
+            Task Description:
+            <input type="text" name="taskDes" /> </br>
+            <button>Submit</button>
+        </form>
+
+    </body>
+</html>
